@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web:
+    build: ./app
+    image: 049637398583.dkr.ecr.us-east-2.amazonaws.com/django_docker_aws:django_docker_aws_web
+  nginx:
+    build: ./nginx
+    image:  049637398583.dkr.ecr.us-east-2.amazonaws.com/django_docker_aws:django_docker_aws_nginx
+volumes:
+  static_volume:
+
+
